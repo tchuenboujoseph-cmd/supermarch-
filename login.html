@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>acceuil</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <link href="vendor/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome/css/all.min.css" rel="stylesheet">
+    <script src="vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/fontawesome/js/all.min.js"></script>
+    <link href="vendor/w3.css" rel="stylesheet">
+    <link rel="stylesheet" href="boxicons-master/css/boxicons.min.css">
+    <script src="jquery-ui-1.14.0-beta.2/external/jquery/jquery.js"></script>
+    <script src="jquery-ui-1.14.0-beta.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="New Library/bootstrap.min.css">
+    <link rel="stylesheet" href="New Library/dataTables.bootstrap5.css">
+    <link rel="stylesheet" href="jQuery-TE_v.1.4.0/jquery-te-1.4.0.css">
+    <link rel="shortcut icon" href="image/unnamed.png" type="image/x-icon">
+    <link rel="stylesheet" href="jquery-ui-themes-1.14.0-beta.2/themes/ui-darkness/jquery-ui.min.css">
+    <!-- <link rel="stylesheet" href="vendor/Datatable/css/dataTables.bootstrap4.css">
+    <script src="vendor/Datatable/js/dataTables.dataTables.js"></script>
+    <script src="vendor/Datatable/js/dataTables.bootstrap4.js"></script>-->
+    <link href="vendor/Datatable/css/jquery.dataTables.min.css">
+    <script src="vendor/jquery-3.7.1.min.js"></script>
+    <script src="vendor/Datatable/js/jquery.dataTables.min.js"></script>
+    <script src="New Library/bootstrap.bundle.min (1).js"></script>
+    <script src="New Library/dataTables (1).js"></script>
+    <script src="New Library/dataTables.bootstrap5 (1).js"></script>
+    <script src="jQuery-TE_v.1.4.0/jquery-te-1.4.0.min.js"></script>
+    <script src="jQuery-TE_v.1.4.0/uncompressed/jquery-te-1.4.0.js"></script>
+   
+</head>
+  <body class="text-white" background-color>
+    <div class="col-lg-12" style="height: 40px;background-color:dodgerblue;width: 100%;">
+      
+        <!--bouton de la navbar-->
+        <div id="mySidenav" class="sidenav">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <center><img src="image/promotion/Free-Super-Market-PSD-Logo-Template-Download-scaled.jpg"class="image w3-circle" alt=""></center>
+         <button class="accordion mb-2">
+       <h5>
+         <img src="image/promotion/courses.jpg" alt="Avatar" id="imarco"><span class="hide">&nbsp;&nbsp;courses quotidien</span></h5> </button>
+      <div class="panel">
+        <a href="Fruit.html"><h6><img src="image/promotion/orange.jpg" alt="Avatar" id="imarco">  fruits et legumes</h6></a>
+        <a href="viande.html"><h6><img src="image/promotion/viande.jpg" alt="Avatar" id="imarco">  viande & poisson</h6></a>
+        <a href="cremerie.html"><h6><img src="image/promotion/fromage.jpg" alt="Avatar" id="imarco"> cremerie</h6></a>
+        <a href="patisserie.html"><h6><img src="image/promotion/pain.jpg" alt="Avatar" id="imarco"> pain & patisserie</h6></a>
+      </div>
+
+      <button class="accordion mb-2" >
+        <h5>
+               <img src="image/promotion/maison.jpg" alt="Avatar" id="imarco"><span class="hide">&nbsp;&nbsp;maison & loisirs</span></h5> </button>
+      <div class="panel">
+        <a href="school.html"><h6><img src="image/promotion/sac.jpg" alt="Avatar" id="imarco">  founitures scolaires</h6></a>
+        <a href="maison.html"><h6><img src="image/promotion/canape.jpg" alt="Avatar" id="imarco"> maison decoration</h6></a>
+        <a href="jeux.html"><h6><img src="image/promotion/manette.jpg" alt="Avatar" id="imarco"> jeux video</h6></a>
+        <a href="computer.html"><h6><img src="image/promotion/ordinateur.jpg" alt="Avatar" id="imarco">computer & phone</h6></a>
+       </div>
+          <button class="accordion mb-2">
+       <h5>
+              <img src="image/promotion/services.jpg" alt="Avatar" id="imarco"><span class="hide">&nbsp;&nbsp;services</span></h5> </button>
+      <div class="panel">
+        <a href="VtmentH.html"><h6><i class="fa fa-plus "></i> style Responsable</h6></a>
+        <a href="VtmentJ.html"><h6><i class="fa fa-plus "></i> style jeune</h6></a>
+        <a href="VtmentH.html"><h6><i class="fa fa-plus "></i> autres</h6></a>
+      </div>
+        </div>
+
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+
+        <!---->    
+      <!-- Use any element to open the sidenav -->
+     <span onclick="openNav()"><button style="background-color:dodgerblue;border: white;height: 40px;" class="btn"><h4 class="text-white"><div class="fa fa-list"></div > Menu</h4></button></span>
+      <button class="btn text-white">promotions</button>
+      <button class="btn text-white">catalogues</button>
+      <button class="btn text-white">service</button>
+
+      <input type="search" placeholder="pain,lait,oeufs..." id="search">
+      <button class="btn-secondary text-white" id="fa-search"><div class="fa fa-search"></div></button> 
+      <button class="btn text-white"> <div class="fa fa-comments"></div> contacts</button>
+     <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"><div class="fa fa-user"></div> Mon compte</button>
+        <div id="myDropdown" class="dropdown-content">
+          <center><!-- Button to open the modal login form -->
+<button onclick="document.getElementById('id01').style.display='block'"class="btn" id="btn-compte"><h6> Me connecter</h6></button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php" style="width: 30%;"> 
+     <span onclick="document.getElementById('id01').style.display='none'"
+      class="close" title="Close Modal">&times;</span>
+    
+
+    <div class="container">
+ <label for="uname" class="text-black"><b>Noms & prenom</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+
+      <label for="psw" class="text-black"><b>mots de passe</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+      <button type="submit" style="background-color: dodgerblue;width: 100%;border: none;height: 40px;color: white;">Send</button><br><br>
+     
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="background-color: red;height: 40px;border: none;width: 100%;">Cancel</button><br><br>
+    </div>
+  </form>
+</div></center> 
+          <center><button class="btn" id="btn-compte"><h6>creer mon compte </h6> </button></center> <hr>
+
+
+         <button class="btn text-white" style="margin-left: 0%;"> <div class="fa fa-shopping-bag"></div>  Mes achats</button>
+         <button class="btn text-white" style="margin-left: 0%;"> <div class="fa fa-user"></div>  Mes infos personnelles</button>
+        </div>
+      </div>
+      <button class="btn text-white"> <div class="fa fa-shopping-cart"></div> Mon pagne </button> 
+ 
+    </div>
+    <div class="col-lg-12" style="height:10%;">
+       <div class="container-flud">
+          <img src="image/promotion/Free-Super-Market-PSD-Logo-Template-Download-scaled.jp" alt="Notebook" width="1500" height="400px"> 
+          <div class="content" style="margin-top: -20%;">
+            <h1 style="color:white;">BIENVENUE <br> CHEZ FREE MARKET</h1>
+          </div>
+        </div>
+    </div>
+   <div class="col-lg-12" style="height:10%;margin-top: 5%;">
+
+    </div><br>
+    <div class="col-lg-12" style="background-color: white;height: 500px;" ><!--
+   <CEnter><h1 class="text-black">FORMULAIRES D'INSCRIPTION </h1> </CEnter>
+     <div class="row text-black">
+    <center><form action="" style="background-color: gray; width: 50%;"> <br>
+          <label for="uname"><b>Nom</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required style="width: 70%;border-radius: 5px;"> <br><br>
+        <label for="psw"><b>Prenom</b></label>
+    <input type="text" placeholder="Enter Username" name="psw" required style="width: 70%;border-radius: 5px;"><br><br>
+    <label for="uname"><b>Email</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required style="width: 70%;border-radius: 5px;"> <br><br>
+        <label for="psw"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contacts</b></label>
+    <input type="text" placeholder="Enter Username" name="psw" required style="width: 70%;border-radius: 5px;"> <br><br>
+    <label for="uname"><b>entre un mots de passe</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required style="width: 70%;border-radius: 5px;"> <br><br>
+        <label for="psw"><b>repeter le mots de passe</b></label>
+    <input type="text" placeholder="Enter Username" name="psw" required style="width: 70%;border-radius: 5px;"> <br><br>
+
+
+        
+
+    </form> </center>-->
+    <center><div class="card" style="width: 600px;">
+    
+       <div class="container"><br>
+         <h2 style="background-color: dodgerblue;color: white;border-radius: 5px;"><b>INSCRIPTION</b></h2><br>
+         <div class="row">
+       <form>
+   <b>Nom:</b><br>
+ <input type="text" placeholder="Enter Username" name="psw" required style="width: 70%;border-radius: 5px;"><br>
+  <b> Prenom:</b> <br>
+  <input type="text" placeholder="Enter Username" name="psw" required style="width: 70%;border-radius: 5px;"> <br>
+   <B for="email"> Email: </B> <br>
+<input type="email" placeholder="Enter Username" name="psw" required style="width: 70%;border-radius: 5px;" id="email"> <br>
+ <b>  Date de naissance:</b><br>
+  <input type="datetime-local" placeholder="Enter Username" name="psw" required style="width: 70%;border-radius: 5px;"> <br><br>
+  <button type="submit" style="background-color: dodgerblue;width: 20%;border: none;height: 40px;color: white; border-radius: 5px;">Send</button>
+  <button type="reset" style="background-color: red;width: 20%;border: none;height: 40px;color: white; border-radius: 5px;">Cancel</button><br><br>
+     
+</form>
+
+         </div>
+            
+       </div>
+
+       
+       
+     </div>
+
+     
+    </center>
+
+     </div>
+       </div><br><br>
+   <div class="col-lg-12" style="background-color: white; height: 200px;">
+    <div class="row">
+      <div class="col-lg-3 text-black">
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+         Porro deleniti, corrupti, eius at aliquam quis consequatur rerum ipsum maxime quos nihil. 
+         Inventore eaque voluptates laudantium suscipit totam? Minus, placeat neque.
+
+      </div>
+        <div class="col-lg-3 text-black">
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+         Porro deleniti, corrupti, eius at aliquam quis consequatur rerum ipsum maxime quos nihil. 
+         Inventore eaque voluptates laudantium suscipit totam? Minus, placeat neque.
+
+      </div>
+        <div class="col-lg-3 text-black">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+         Porro deleniti, corrupti, eius at aliquam quis consequatur rerum ipsum maxime quos nihil. 
+         Inventore eaque voluptates laudantium suscipit totam? Minus, placeat neque.
+
+      </div>
+        <div class="col-lg-3 text-black">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+         Porro deleniti, corrupti, eius at aliquam quis consequatur rerum ipsum maxime quos nihil. 
+         Inventore eaque voluptates laudantium suscipit totam? Minus, placeat neque.
+
+      </div> 
+<div class="col-lg-12 text-black" style="height: 10px;"><br>
+    <center><h4>Nous suivre</h4></center>
+    <center> <i class=" fa-brands fa-facebook" style="color: blue; height: 30px;"></i>&nbsp;&nbsp;&nbsp;
+    <i class=" fa-brands fa-whatsapp" style="color:green; height: 30px;"></i>&nbsp;&nbsp;&nbsp;
+     <i class=" fa-brands fa-twitter-square" style="color:dodgerblue; height: 30px;"></i>&nbsp;&nbsp;&nbsp;
+      <i class=" fa-brands fa-linkedin" style="color:blue; height: 30px;"></i>&nbsp;&nbsp;&nbsp;
+      <i class=" fa-brands fa-tiktok" style="color:black; height: 30px;"></i>&nbsp;&nbsp;&nbsp;
+    <i class=" fa-brands fa-xing" style="color:green; height: 30px;"></i>&nbsp;&nbsp;&nbsp;
+     <i class=" fa-brands fa-telegram" style="color:dodgerblue; height: 30px;"></i>
+   
+    </center>
+   
+
+   </div>
+    </div>
+
+   </div>
+   
+
+    
+          
+        
+        
+  
+      
+    
+    
+    
+   
+    <script>
+      /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+}
+
+$(".accordion").click(function () {
+            $(".panel").not($(this).next()).slideUp();
+            $(this).next().slideToggle();
+
+            $(".accordion").not($(this)).removeClass('active');
+            (this).toggleClass('active');
+        });
+    </script>
+        <script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+  };</script>
+
+<script>function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(51.5, -0.12),
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}</script>
+
+     
+  </body>
+    
+  
+</html>
